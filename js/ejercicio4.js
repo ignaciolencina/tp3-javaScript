@@ -3,7 +3,7 @@
 
 
 function numerosParImpar(numero) {
-  if (Number.isInteger(numero)) {
+  if (!isNaN(numero)) {
     if (numero % 2 === 0) {
       alert(`El número ${numero} es par`);
     } else {
