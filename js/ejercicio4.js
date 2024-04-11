@@ -2,8 +2,7 @@
 
 
 
-function numerosParImpar() {
-  let numero = Number(prompt("Ingrese un número entero:"));
+function numerosParImpar(numero) {
   if (Number.isInteger(numero)) {
     if (numero % 2 === 0) {
       alert(`El número ${numero} es par`);
@@ -15,4 +14,5 @@ function numerosParImpar() {
   }
 }
 
-numerosParImpar();
+let numero = Number(prompt("Ingrese un número entero:"));
+let resultado = numerosParImpar(numero);
